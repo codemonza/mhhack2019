@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Clinician Questionnaire</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<link rel="stylesheet" href="styles/helpers.css">
+		<link rel="stylesheet" href="styles/grid.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<style>
+            /* background */		
+            .hero {
+            	background white url(images/front_page.jpg) center / cover;
+            }
+
+            @media (max-width: 2048px) { .hero { background: white url(images/front_page.jpg) center / cover; } }
+            @media (max-width:  768px) { .hero { background: white url(images/front_page.jpg) center / cover; } }
+
+            /* responsive */
+            @media (max-width: 768px) {
+            	:root {
+            		font-size: 90%;
+            	}
+            }
+            h1.title {
+               font-family: 'Abril Fatface', cursive;
+               font-size: 70px;
+            }
+
+            $link: $primary !default
+            $link-invert: $primary-invert !default
+            $link-focus-border: $primary !default
+
+
+		</style>
+	</head>
+	<nav class="hero-head">
+	  <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+	    <div class="column left">
+	      <figure class="navbar-item image">
+	        <img src="images/tesla.svg" style="width: 6.25rem; height: 1rem;">
+	      </figure>
+	    </div>
+	    <div class="column center desktop">
+	      <p class="navbar-item has-text-black"><a href="./how_we_help.html">How We Help</p></a>
+	      <p class="navbar-item has-text-black"><a href="../i_am_clinician">I am a Clinician</p></a>
+	            <p class="navbar-item has-text-white">About Us</p>
+	    </div>
+	    <div class="column right">
+	      <p class="navbar-item desktop has-text-black desktop">SIGN IN</p>
+	      <figure class="navbar-item image">
+	        <i class="fas fa-3x fa-bars has-text-black"
+	          style="width: 1rem; height: 1rem;"></i>
+	      </figure>
+	    </div>
+	  </div>
+	</nav>
+<body>
+  <div class="container">
+	<div class="field">
+      <label class="label">First Name*</label>
+      <div class="control">
+        <input id="patient_name" class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Last Name*</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">License Number*</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Accepts insurance?</label>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="question">
+          Yes
+        </label>
+        <label class="radio">
+          <input type="radio" name="question">
+          No
+        </label>
+    </div>
+    <div class="field">
+	      <label class="label">Hourly Rate*</label>
+	      <div class="control">
+	        <input class="input" type="text" placeholder="Text input">
+	      </div>
+	</div>
+	<div class="field">
+      <label class="label">Language Preference</label>
+      <div class="control">
+        <div class="select">
+          <select>
+              <option>Select dropdown</option>
+              <option value="AF">Afrikanns</option>
+              <option value="SQ">Albanian</option>
+              <option value="AR">Arabic</option>
+              <option value="HY">Armenian</option>
+              <option value="EU">Basque</option>
+              <option value="BN">Bengali</option>
+              <option value="BG">Bulgarian</option>
+              <option value="CA">Catalan</option>
+              <option value="KM">Cambodian</option>
+              <option value="ZH">Chinese (Mandarin)</option>
+              <option value="HR">Croation</option>
+              <option value="CS">Czech</option>
+              <option value="DA">Danish</option>
+              <option value="NL">Dutch</option>
+              <option value="EN">English</option>
+              <option value="ET">Estonian</option>
+              <option value="FJ">Fiji</option>
+              <option value="FI">Finnish</option>
+              <option value="FR">French</option>
+              <option value="KA">Georgian</option>
+              <option value="DE">German</option>
+              <option value="EL">Greek</option>
+              <option value="GU">Gujarati</option>
+              <option value="HE">Hebrew</option>
+              <option value="HI">Hindi</option>
+              <option value="HU">Hungarian</option>
+              <option value="IS">Icelandic</option>
+              <option value="ID">Indonesian</option>
+              <option value="GA">Irish</option>
+              <option value="IT">Italian</option>
+              <option value="JA">Japanese</option>
+              <option value="JW">Javanese</option>
+              <option value="KO">Korean</option>
+              <option value="LA">Latin</option>
+              <option value="LV">Latvian</option>
+              <option value="LT">Lithuanian</option>
+              <option value="MK">Macedonian</option>
+              <option value="MS">Malay</option>
+              <option value="ML">Malayalam</option>
+              <option value="MT">Maltese</option>
+              <option value="MI">Maori</option>
+              <option value="MR">Marathi</option>
+              <option value="MN">Mongolian</option>
+              <option value="NE">Nepali</option>
+              <option value="NO">Norwegian</option>
+              <option value="FA">Persian</option>
+              <option value="PL">Polish</option>
+              <option value="PT">Portuguese</option>
+              <option value="PA">Punjabi</option>
+              <option value="QU">Quechua</option>
+              <option value="RO">Romanian</option>
+              <option value="RU">Russian</option>
+              <option value="SM">Samoan</option>
+              <option value="SR">Serbian</option>
+              <option value="SK">Slovak</option>
+              <option value="SL">Slovenian</option>
+              <option value="ES">Spanish</option>
+              <option value="SW">Swahili</option>
+              <option value="SV">Swedish</option>
+              <option value="TA">Tamil</option>
+              <option value="TT">Tatar</option>
+              <option value="TE">Telugu</option>
+              <option value="TH">Thai</option>
+              <option value="BO">Tibetan</option>
+              <option value="TO">Tonga</option>
+              <option value="TR">Turkish</option>
+              <option value="UK">Ukranian</option>
+              <option value="UR">Urdu</option>
+              <option value="UZ">Uzbek</option>
+              <option value="VI">Vietnamese</option>
+              <option value="CY">Welsh</option>
+              <option value="XH">Xhosa</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Your areas of specialty*</label>
+      <p><label class="checkbox">
+        <input type="checkbox">PTSD 
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Mood Disorders
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Anxiety  
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">ADD/ADHD
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Procrastination
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Trauma 
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Addiction
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Marriage
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Parenting  
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Workplace
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Psychosis
+      </label></p>
+      <p><label class="checkbox">
+        <input type="checkbox">Eating Disorder  
+      </label></p>
+    </div>
+
+	<div class="field is-grouped center-column">
+      <div class="control column">
+        <button class="button is-success">Submit</button>
+      </div>
+      <div class="control column">
+        <button class="button is-text">Cancel</button>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
